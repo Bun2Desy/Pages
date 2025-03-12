@@ -1,0 +1,26 @@
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    networks:
+      - app-network
+    env_file: "./.env"
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      app-network:
+        aliases:
+          - cab.local
+          - posts.local
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,23 @@
+  form{
+    max-width: 500px;
+    margin-top: 40px;
+  }
+  button{
+    white-space: nowrap;
+    text-align: center;
+  }
+  .chat{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+  }
+  .chat-input{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .chat-form__input{
+    width: 80%;
+  }

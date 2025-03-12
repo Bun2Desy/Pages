@@ -1,0 +1,11 @@
+.form-page{
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+.boba{
+    position: absolute;
+    left: 25%;
+    height: 100%;
+    width: 50%
+}
